@@ -139,6 +139,6 @@ class Api {
   }
   }
   // Замените на адрес вашего бэкенда
-  const api = new Api('https://api.mist-24-3-2.nomorepartiessbs.ru/');
+  const api = new Api('https://api.mist-24-3-2.nomorepartiessbs.ru');
 
   export default api;
