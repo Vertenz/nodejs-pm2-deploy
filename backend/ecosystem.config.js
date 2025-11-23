@@ -7,6 +7,7 @@ const {
   DEPLOY_HOST,
   DEPLOY_PATH,
   DEPLOY_REPOSITORY,
+  DEPLOY_KEY = '~/.ssh/ya',
   DEPLOY_REF = 'origin/master',
 } = process.env;
 
@@ -21,6 +22,7 @@ module.exports = {
     production: {
       user: DEPLOY_USER,
       host: DEPLOY_HOST,
+      key: DEPLOY_KEY,
       ref: DEPLOY_REF,
       repo: DEPLOY_REPOSITORY,
       path: DEPLOY_PATH,
