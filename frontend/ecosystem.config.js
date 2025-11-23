@@ -26,7 +26,7 @@ module.exports = {
       ref: DEPLOY_REF,
       repo: DEPLOY_REPOSITORY,
       path: DEPLOY_PATH,
-      'post-deploy': 'cd frontend && npm ci && npm run build && pm2 startOrRestart ecosystem.config.js --env production',
+      'post-deploy': 'cd frontend && npm ci && npm run build',
     },
   },
 };
